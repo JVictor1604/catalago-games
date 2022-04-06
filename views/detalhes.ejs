@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <link rel="stylesheet" href="/css/detalhes.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="header-area">
+
+            <img src="/assets/img/controller.png" alt="logotipo">
+
+            <div id="header-main">
+
+                <h2>
+                    <center> Catálogo Games </center>
+                </h2>
+
+            </div>
+
+            <nav id="nav">
+
+
+                <ul>
+                    <li><a href="/"> Home </a></li>
+                    <li><a href="#card-jogo"> Jogos </a></li>
+                    <li><a href="#footer"> Contact </a></li>
+                    <li><a href=""> About </a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <section id="jogos">
+
+            <div class="card">
+                <div class="card-title">
+
+                    <h2>
+                        <%= game.nome %>
+                    </h2>
+
+                </div>
+
+                <div class="card-img">
+
+                    <img src="<%= game.imagem %>" alt="imagem">
+
+                </div>
+
+                <div class="card-info">
+
+                    <div class="card-descricao">
+
+                        <p> Descrição: <%= game.descricao %>
+                                <p>
+
+                    </div>
+
+                    <div class="card-preco">
+
+                        <p> Preço: <%= game.preço %> R$ <p>
+
+                    </div>
+
+                    <div class="card-estoque">
+
+                        <p> Estoque: <%= game.estoque %>
+                                <p>
+
+                    </div>
+
+                    <div class="card-genero">
+
+                        <p> Gênero: <%= game.genero %>
+                                <p>
+
+                    </div>
+
+                    <div class="Plataforma">
+
+                        <p> Plataforma: <%= game.plataforma %>
+                                <p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+    </main>
+
+</body>
+
+
+</html>
