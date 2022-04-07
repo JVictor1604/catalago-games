@@ -1,0 +1,60 @@
+section#cadastro {
+
+    padding-top: 10vh;
+}
+
+section#cadastro {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+section#cadastro h2{
+
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+
+section#cadastro form input{
+
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+    border: solid 3px white;
+    font-weight: bolder;
+
+}
+
+section#cadastro form{
+
+    width: 50%;
+
+}
+
+section#cadastro form button {
+
+   padding: 0.4rem;
+   width: 20%;
+   display: flex;
+   margin: 0 auto;
+   background-color: white;
+   color: blacks;
+   border: solid 3px rgb(139, 146, 241);
+   border-radius: 1rem;
+   cursor: pointer;
+}
+
+section#cadastro form button:hover {
+
+    background-color: rgb(139, 146, 241);
+    color: white;
+    border: solid 3px white;
+}

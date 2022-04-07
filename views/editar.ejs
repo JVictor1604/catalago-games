@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <%- include('./components/head') %>
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+    
+<header>
+
+    <%- include('./components/navbar') %>
+
+</header>
+
+
+<main>
+
+    <section id="cadastro">
+
+
+        <h2> Editar <%= jogo.nome %> </h2>
+    
+        <form action="/uptade/<%= jogo.id %> " method="POST">
+    
+    
+            <label for="nome"> Nome: </label>
+            <input type="text" id="nome" name="nome" value="<%= jogo.nome %> ">
+    
+            <label for="imagem"> Imagem:</label>
+            <input type="text" id="imagem" name="imagem"  value="<%= jogo.imagem %> ">
+    
+            <label for="descricao"> Descrição: </label>
+            <input type="text" id="descricao" name="descricao"  value="<%= jogo.descricao %> ">
+    
+            <label for="preço"> Preço: </label>
+            <input type="text" id="preço" name="preço"  value="<%= jogo.preço %> ">
+    
+            <label for="estoque"> Estoque: </label>
+            <input type="text" id="estoque" name="estoque"  value="<%= jogo.estoque %> ">
+    
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" name="genero"  value="<%= jogo.genero %> ">
+    
+            <label for="Plataforma">Plataforma:</label>
+            <input type="text" id="plataforma" name="plataforma"  value="<%= jogo.plataforma %> ">
+    
+    
+            <button id="cadastrar" type="submit"> Editar Jogo </button>            
+            
+    
+    
+        </form>
+    
+    
+    
+    
+    
+    </section>
+
+</main>
+
+</body>
+</html>

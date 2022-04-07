@@ -1,49 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes</title>
-    <link rel="stylesheet" href="/css/detalhes.css">
-</head>
+    <%- include('./components/head') %> 
+    
 
 <body>
 
     <header>
 
-        <div id="header-area">
-
-            <img src="/assets/img/controller.png" alt="logotipo">
-
-            <div id="header-main">
-
-                <h2>
-                    <center> Catálogo Games </center>
-                </h2>
-
-            </div>
-
-            <nav id="nav">
-
-
-                <ul>
-                    <li><a href="/"> Home </a></li>
-                    <li><a href="#card-jogo"> Jogos </a></li>
-                    <li><a href="#footer"> Contact </a></li>
-                    <li><a href=""> About </a></li>
-                </ul>
-
-            </nav>
-
-        </div>
+        <%- include('./components/navbar') %>
 
     </header>
 
 
 
     <main>
+        
 
         <section id="jogos">
 
@@ -102,7 +74,16 @@
             </div>
 
 
+            
+
     </main>
+
+    <div id="botoes">
+
+        <a href="/editar/<%=game.id%> "> <button class="button">  <span> Editar</span>  </button> </a>
+        <a href="/deletar/<%= game.id %> "> <button class="button">  <span> Apagar</span>  </button> </a>
+
+    </div>
 
 </body>
 
